@@ -1,0 +1,5 @@
+*.db
+TimeTravel/.vs/
+TimeTravel/Binaries/
+TimeTravel/Intermediate/
+TimeTravel/Saved/
