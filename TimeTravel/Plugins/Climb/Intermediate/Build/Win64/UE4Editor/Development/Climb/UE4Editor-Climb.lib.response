@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Climb.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal Projects\PracticeRPG\TimeTravel\Intermediate\Build\Win64\TimeTravelEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Unreal Projects\PracticeRPG\TimeTravel\Plugins\Climb\Intermediate\Build\Win64\UE4Editor\Development\Climb\Module.Climb.cpp.obj"
+"D:\Unreal Projects\PracticeRPG\TimeTravel\Plugins\Climb\Intermediate\Build\Win64\UE4Editor\Development\Climb\Module.Climb.gen.cpp.obj"
+"D:\Unreal Projects\PracticeRPG\TimeTravel\Plugins\Climb\Intermediate\Build\Win64\UE4Editor\Development\Climb\PCLaunch.rc.res"
+/OUT:"D:\Unreal Projects\PracticeRPG\TimeTravel\Plugins\Climb\Intermediate\Build\Win64\UE4Editor\Development\Climb\UE4Editor-Climb.lib"

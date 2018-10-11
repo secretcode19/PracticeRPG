@@ -21,6 +21,8 @@ class ATimeTravelCharacter : public ACharacter
 public:
 	ATimeTravelCharacter();
 
+	virtual void Tick(float DeltaTime) override;
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -29,7 +31,14 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(EditDefaultsOnly, Category = Weapon)
+	TSubclassOf<class ASword> SwordClass;
+
 protected:
+
+	virtual void BeginPlay() override;
+
+	void SpawnDefaultInventory();
 
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();
@@ -57,6 +66,14 @@ protected:
 
 	/** Handler for when a touch input stops. */
 	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
+
+	float UpDownValue;
+
+	float LeftRightValue;
+
+	void UpDown(float Value);
+
+	void LeftRight(float Value);
 
 protected:
 	// APawn interface
